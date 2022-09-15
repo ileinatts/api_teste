@@ -173,5 +173,5 @@ def deletar_autores(autor, id_autor):
     
     return jsonify({'Mensagem':'Autor deletado com sucesso'}, 200)
 
-
-app.run(port=5002, host='localhost', debug=True)
+if __name__ == '__main__':
+    app.run(port=5002, host='localhost', debug=True)
